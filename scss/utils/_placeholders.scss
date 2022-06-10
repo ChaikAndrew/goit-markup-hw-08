@@ -1,0 +1,16 @@
+%btn-primary {
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--main-background);
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+
+  transition: background-color 250ms var(--main-anim);
+}

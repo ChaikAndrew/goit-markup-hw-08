@@ -1,0 +1,158 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-background);
+}
+
+.footer__address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-background);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__mail-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__tel-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__main-address {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer__map {
+  margin-bottom: 9px;
+}
+.footer__mail {
+  margin-bottom: 9px;
+}
+
+.footer__social-title,
+.footer__mail-title {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-icon);
+}
+
+/*footer nav*/
+.footer__nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  cursor: pointer;
+  fill: var(--secondary-icon);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--main-anim);
+}
+
+.footer__icon-link:hover,
+.footer__icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer__address-list {
+  display: inline-block;
+  margin-right: 70px;
+}
+.footer__icon-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+
+  list-style-type: none;
+}
+
+.footer__icon-items + .footer__icon-items {
+  margin-left: 10px;
+}
+
+.footer__social-icon {
+  margin-right: auto;
+}
+
+.footer__mail-form {
+  margin-top: 20px;
+}
+
+.footer__mail-form input {
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  width: 358px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  background-color: transparent;
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: border 250ms var(--main-anim);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.footer__mail-input {
+  color: var(--secondary-icon);
+}
+
+.footer__btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer__icon-send {
+  margin-left: 10px;
+  fill: #ffffff;
+}

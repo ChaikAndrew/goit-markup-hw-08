@@ -1,0 +1,31 @@
+//icon team (instagram, twitter, facebook, linkedin)
+.team__icon-list {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+
+  & .team__icon-item + .team__icon-item {
+    margin-left: 10px;
+  }
+}
+
+.team__icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  fill: var(--main-icon);
+
+  transition: fill 250ms var(--main-anim), background-color 250ms var(--main-anim);
+
+  &:hover,
+  &:focus {
+    fill: var(--secondary-icon);
+    background-color: var(--accent-color);
+  }
+}
