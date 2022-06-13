@@ -11,6 +11,9 @@
       margin-top: 30px;
     }
   }
+  @include mq(tablet-only) {
+    width: 100%;
+  }
 
   display: flex;
   justify-content: center;
@@ -22,15 +25,18 @@
   margin-bottom: 30px;
 }
 .benefits__list {
-  @include mq(desktop) {
+  @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .benefits__item {
+  @include mq(tablet) {
+    width: 354px;
+  }
   @include mq(desktop) {
     width: 270px;
-    height: 120px;
 
     & + & {
       margin-left: 30px;

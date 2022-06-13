@@ -56,15 +56,28 @@
 }
 
 .footer__map {
-  margin-bottom: 9px;
+  @include mq(mobile) {
+    margin-bottom: 8px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 9px;
+  }
 }
 .footer__mail {
-  margin-bottom: 9px;
+  @include mq(mobile) {
+    margin-bottom: 8px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__social-title,
 .footer__mail-title {
   @include mq(mobile-only) {
+    justify-content: center;
+  }
+  @include mq(tablet-only) {
     justify-content: center;
   }
   display: flex;
@@ -81,6 +94,11 @@
 .footer__nav {
   @include mq(mobile-only) {
     display: block;
+  }
+
+  @include mq(tablet-only) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   display: flex;
@@ -110,7 +128,14 @@
 .footer__address-list {
   @include mq(mobile-only) {
     text-align: center;
-    margin-right: 0;
+
+    margin-bottom: 60px;
+  }
+  @include mq(tablet) {
+    text-align: center;
+
+    margin-right: 165px;
+    margin-bottom: 60px;
   }
 
   @include mq(desktop) {
@@ -119,6 +144,9 @@
   }
 }
 .footer__icon-list {
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
   display: flex;
   padding: 0;
   margin: 0;
@@ -136,19 +164,37 @@
     display: grid;
     justify-content: center;
   }
+  @include mq(tablet-only) {
+    margin: 0;
+  }
   margin-right: auto;
 }
 
 .footer__mail-form {
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   margin-top: 20px;
+
+  @include mq(tablet-only) {
+    width: 450px;
+  }
 }
 
 .footer__mail-input {
+  @include mq(mobile-only) {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  @include mq(tablet-only) {
+    width: 450px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
   margin-right: 12px;
   padding: 15px 16px;
 

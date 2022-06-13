@@ -13,6 +13,12 @@
   }
 }
 
+.team__img {
+  @include mq(tablet-only) {
+    width: 354px;
+  }
+}
+
 .team__card {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -45,7 +51,11 @@
   @include mq(mobile) {
     display: block;
   }
-
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   @include mq(desktop) {
     display: flex;
     flex-wrap: wrap;
@@ -68,6 +78,11 @@
       }
     }
 
+    @include mq(tablet-only) {
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+    }
     background-color: var(--main-background);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
