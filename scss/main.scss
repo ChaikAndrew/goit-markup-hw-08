@@ -1,25 +1,26 @@
 //utils
-@import './utils/vars';
-@import './utils/placeholders';
+@import "./utils/vars";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 
 //base styles
-@import './base/common';
-@import './base/container';
-@import './base/reset';
+@import "./base/common";
+@import "./base/container";
+@import "./base/reset";
 
 //components
-@import './components/buttons';
-@import './components/logo';
-@import './components/modal';
-@import './components/socials';
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/socials";
 
 //layouts
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/portfolio';
-@import './layouts/developments';
-@import './layouts/team';
-@import './layouts/clients';
-@import './layouts/benefits';
-@import './layouts/projects';
-@import './layouts/footer';
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/portfolio";
+@import "./layouts/developments";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/benefits";
+@import "./layouts/projects";
+@import "./layouts/footer";

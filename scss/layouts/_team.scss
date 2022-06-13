@@ -1,11 +1,16 @@
 .team__title {
+  @include mq(mobile) {
+    margin-bottom: 30px;
+  }
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
   letter-spacing: 0.03em;
-
-  margin-bottom: 50px;
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .team__card {
@@ -31,12 +36,22 @@
     color: var(--text-color-light);
   }
 }
-
+.team__img {
+  @include mq(mobile-only) {
+    width: auto;
+  }
+}
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  & .team__item + .team__item {
-    margin-left: 30px;
+  @include mq(mobile) {
+    display: block;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    & .team__item + .team__item {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -47,6 +62,12 @@
   background-color: #f5f4fa;
 
   &__item {
+    @include mq(mobile-only) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
     background-color: var(--main-background);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

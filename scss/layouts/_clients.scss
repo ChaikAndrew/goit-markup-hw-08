@@ -1,4 +1,7 @@
 .clients__title {
+  @include mq(mobile-only) {
+    margin-bottom: 0;
+  }
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -8,6 +11,12 @@
   margin-bottom: 50px;
 }
 .clients__list {
+  @include mq(mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   display: flex;
 }
 .clients__link {
@@ -33,6 +42,17 @@
   }
 }
 
-.clients__item + .clients__item {
-  margin-left: 30px;
+@include mq(mobile-only) {
+  .clients__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .clients__item {
+    margin-top: 30px;
+  }
+}
+
+@include mq(desktop) {
+  .clients__item + .clients__item {
+    margin-left: 30px;
+  }
 }

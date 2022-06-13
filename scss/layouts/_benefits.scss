@@ -5,6 +5,13 @@
 }
 
 .benefits__logo {
+  @include mq(mobile-only) {
+    width: 100%;
+    .benefits__logo:not(first-child) {
+      margin-top: 30px;
+    }
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,18 +22,27 @@
   margin-bottom: 30px;
 }
 .benefits__list {
-  display: flex;
-  flex-wrap: wrap;
+  @include mq(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .benefits__item {
-  width: 270px;
+  @include mq(desktop) {
+    width: 270px;
+    height: 120px;
 
-  & + & {
-    margin-left: 30px;
+    & + & {
+      margin-left: 30px;
+    }
   }
 }
 
 .benefits__subtitle {
+  @include mq(mobile-only) {
+    text-align: center;
+  }
+
   margin: 0;
   margin-bottom: 10px;
 
