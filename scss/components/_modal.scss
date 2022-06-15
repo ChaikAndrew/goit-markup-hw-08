@@ -19,7 +19,7 @@
 
 .modal {
   position: absolute;
-  min-width: 528px;
+
   min-height: 521px;
   padding: 40px;
 
@@ -34,6 +34,18 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 250ms var(--main-anim);
+
+  @include mq(mobile-only) {
+    max-width: 450px;
+    width: calc(100% - 30px);
+  }
+  @include mq(mobile) {
+    min-width: 450px;
+  }
+
+  @include mq(tablet) {
+    min-width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -208,5 +220,6 @@
   background-origin: border-box;
   background-repeat: no-repeat;
 
-  transition: background-color 250ms var(--main-anim), background-image 250ms var(--main-anim);
+  transition: background-color 250ms var(--main-anim),
+    background-image 250ms var(--main-anim);
 }

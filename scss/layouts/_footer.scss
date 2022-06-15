@@ -114,7 +114,7 @@
 
   cursor: pointer;
   fill: var(--secondary-icon);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ffffff1a;
   border-radius: 50%;
 
   transition: background-color 250ms var(--main-anim);
@@ -178,7 +178,7 @@
   }
   margin-top: 20px;
 
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     width: 450px;
   }
 }
@@ -190,7 +190,7 @@
     width: 100%;
   }
 
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     width: 450px;
     margin: 0;
     margin-bottom: 20px;
