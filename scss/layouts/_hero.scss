@@ -42,16 +42,16 @@
       url(../../images/header/background_image_md.jpg);
     background-color: #c4c4c4;
 
-    //фон для мобільної версіі ретіна 2х
-  }
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/header/background_image_md@2x.jpg);
-    background-color: #c4c4c4;
+    //фон для таблет версіі ретіна 2х
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/header/background_image_md@2x.jpg);
+      background-color: #c4c4c4;
+    }
   }
 
   //фон для десктоп версіі
@@ -66,15 +66,15 @@
     background-color: #c4c4c4;
 
     //фон для десктоп версіі ретіна 2х
-  }
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/header/background_image_lg@2x.jpg);
-    background-color: #c4c4c4;
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/header/background_image_lg@2x.jpg);
+      background-color: #c4c4c4;
+    }
   }
 
   background-repeat: no-repeat;

@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Хедер-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container main__nav">
         <nav class="header__nav">
           <a class="header__logo link" href="./index.html"
@@ -64,7 +64,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!--Мейн-->
     <main>
       <!--Секция "Герой"-->
@@ -146,38 +146,79 @@
             <li class="development__item">
               <div class="development__aside">
                 <p class="development__text">Десктопные приложения</p>
-                <img
-                  class="development__img"
-                  src="./images/development/pc_program.jpg"
-                  alt="Разработка приложений для ПК"
-                  width="370"
-                  height="294"
-                />
+
+                <picture>
+                  <!--набір зображень для десктопних екранів 2x-->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/development/pc_program.jpg    1x,
+                      ./images/development/pc_program@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!--дефолтне зображення-->
+                  <img
+                    class="development__img"
+                    src="./images/development/pc_program.jpg"
+                    alt="Разработка приложений для ПК"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               </div>
             </li>
 
             <li class="development__item">
               <div class="development__aside">
                 <p class="development__text">Мобильные приложения</p>
-                <img
-                  class="development__img"
-                  src="./images/development/phone_program.jpg"
-                  alt="Разработка приложений на телефон"
-                  width="370"
-                  height="294"
-                />
+
+                <picture>
+                  <!--набір зображень для десктопних екранів 2x-->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/development/phone_program.jpg    1x,
+                      ./images/development/phone_program@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!--дефолтне зображення-->
+                  <img
+                    class="development__img"
+                    src="./images/development/phone_program.jpg"
+                    alt="Разработка приложений на телефон"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               </div>
             </li>
             <li class="development__item">
               <div class="development__aside">
                 <p class="development__text">Дизайнерские решения</p>
-                <img
-                  class="development__img"
-                  src="./images/development/tablet_program.jpg"
-                  alt="Разработка приложений на планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <!--набір зображень для десктопних екранів 2x-->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/development/tablet_program.jpg    1x,
+                      ./images/development/tablet_program@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!--дефолтне зображення-->
+                  <img
+                    class="development__img"
+                    src="./images/development/tablet_program.jpg"
+                    alt="Разработка приложений на планшет"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
               </div>
             </li>
           </ul>
@@ -295,13 +336,44 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/olga_repina_lg.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!--набір зображень для десктопних екранів-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/olga_repina_lg.jpg    1x,
+                    ./images/team/olga_repina_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для планшетів екранів-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/olga_repina_md.jpg    1x,
+                    ./images/team/olga_repina_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для моб екранів-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/olga_repina_sm.jpg    1x,
+                    ./images/team/olga_repina_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--дефолтне зображення-->
+                <img
+                  class="team__img"
+                  src="./images/team/olga_repina_sm.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__card-name">Ольга Репина</h3>
                 <p class="team__card-career">Frontend Developer</p>
@@ -370,13 +442,44 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/nikolai_tarasov_lg.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!--набір зображень для десктопних екранів-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/nikolai_tarasov_lg.jpg    1x,
+                    ./images/team/nikolai_tarasov_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для планшетів екранів-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/nikolai_tarasov_md.jpg    1x,
+                    ./images/team/nikolai_tarasov_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для моб екранів-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/nikolai_tarasov_sm.jpg    1x,
+                    ./images/team/nikolai_tarasov_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--дефолтне зображення-->
+                <img
+                  class="team__img"
+                  src="./images/team/nikolai_tarasov_sm.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__card-name">Николай Тарасов</h3>
                 <p class="team__card-career">Marketing</p>
@@ -445,13 +548,44 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/mihail_ermakov_lg.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!--набір зображень для десктопних екранів-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/mihail_ermakov_lg.jpg    1x,
+                    ./images/team/mihail_ermakov_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для планшетів екранів-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/mihail_ermakov_md.jpg    1x,
+                    ./images/team/mihail_ermakov_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для моб екранів-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mihail_ermakov_sm.jpg    1x,
+                    ./images/team/mihail_ermakov_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--дефолтне зображення-->
+                <img
+                  class="team__img"
+                  src="./images/team/mihail_ermakov_sm.jpg"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__card-name">Михаил Ермаков</h3>
                 <p class="team__card-career">UI Designer</p>
