@@ -1,7 +1,4 @@
 .clients__title {
-  @include mq(mobile-only) {
-    margin-bottom: 30px;
-  }
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
@@ -9,6 +6,17 @@
   letter-spacing: 0.03em;
 
   margin-bottom: 50px;
+
+  @include mq(mobile-only) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+  @include mq(tablet) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 .clients__list {
   display: flex;

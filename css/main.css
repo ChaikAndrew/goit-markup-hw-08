@@ -560,6 +560,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -844,6 +845,15 @@ img {
 @media screen and (max-width: 767.98px) {
   .clients__title {
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
   }
 }
 
