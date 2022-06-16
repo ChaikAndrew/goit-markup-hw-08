@@ -11,30 +11,29 @@
   margin-bottom: 50px;
 }
 .clients__list {
-  @include mq(mobile) {
-    display: flex;
+  display: flex;
+  @include mq(mobile-only) {
     flex-wrap: wrap;
     justify-content: center;
   }
-  @include mq(tablet-only) {
-    display: flex;
+  @include mq(tablet) {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  display: flex;
 }
-.clients__link {
-  @include mq(mobile) {
-    width: 210px;
-  }
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
 
   @include mq(tablet) {
-    width: 226px;
+    width: calc((100% - 60px) / 3);
   }
   @include mq(desktop) {
-    width: 170px;
+    width: calc((100% - 150px) / 6);
   }
+}
+
+.clients__link {
   display: flex;
 
   height: 92px;

@@ -48,7 +48,7 @@
 }
 
 .footer__main-address {
-  @include mq(mobile) {
+  @include mq(mobile-only) {
     justify-content: center;
   }
   display: flex;
@@ -126,14 +126,11 @@
 }
 
 .footer__address-list {
-  @include mq(mobile-only) {
+  @include mq(tablet-only) {
     text-align: center;
-
     margin-bottom: 60px;
   }
   @include mq(tablet) {
-    text-align: center;
-
     margin-right: 165px;
     margin-bottom: 60px;
   }
@@ -160,9 +157,10 @@
 }
 
 .footer__social-icon {
-  @include mq(mobile) {
-    display: grid;
-    justify-content: center;
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   @include mq(tablet-only) {
     margin: 0;
@@ -171,34 +169,18 @@
 }
 
 .footer__mail-form {
-  @include mq(mobile) {
-    display: flex;
+  display: flex;
+
+  @include mq(tablet-only) {
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 450px;
   }
   margin-top: 20px;
-
-  @include mq(tablet) {
-    width: 450px;
-  }
 }
 
 .footer__mail-input {
-  @include mq(mobile-only) {
-    margin: 0;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  @include mq(tablet) {
-    width: 450px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  margin-right: 12px;
   padding: 15px 16px;
-
-  width: 358px;
   height: 50px;
 
   font-size: 16px;
@@ -209,12 +191,26 @@
   border-radius: 4px;
   transition: border 250ms var(--main-anim);
 
+  @include mq(tablet-only) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  @include mq(desktop) {
+    width: 358px;
+    margin-right: 12px;
+  }
+
   &:hover,
   &:focus {
     border-color: var(--accent-color);
   }
 }
-
+.footer__mail-row {
+  @include mq(desktop) {
+    margin-left: 93px;
+  }
+}
 .footer__mail-input {
   color: var(--secondary-icon);
 }

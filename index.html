@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Хедер-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container main__nav">
         <nav class="header__nav">
           <a class="header__logo link" href="./index.html"
@@ -30,7 +30,9 @@
           >
           <ul class="header__list list">
             <li class="header__item">
-              <a class="header__link link header__link--active" href="">Студия</a>
+              <a class="header__link link header__link--active" href=""
+                >Студия</a
+              >
             </li>
             <li class="header__item">
               <a class="header__link link" href="./portfolio.html">Портфолио</a>
@@ -42,7 +44,10 @@
         </nav>
         <ul class="header__contact list">
           <li class="header__contact-item">
-            <a class="header__contact-mail link" href="mailto:info@devstudio.com">
+            <a
+              class="header__contact-mail link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="header__contact-icon" width="16px" height="12px">
                 <use href="./images/svg/sprite.svg#icon-mail"></use>
               </svg>
@@ -59,7 +64,7 @@
           </li>
         </ul>
       </div>
-    </header> 
+    </header> -->
     <!--Мейн-->
     <main>
       <!--Секция "Герой"-->
@@ -143,7 +148,7 @@
                 <p class="development__text">Десктопные приложения</p>
                 <img
                   class="development__img"
-                  src="./images/pc_program.jpg"
+                  src="./images/development/pc_program.jpg"
                   alt="Разработка приложений для ПК"
                   width="370"
                   height="294"
@@ -156,7 +161,7 @@
                 <p class="development__text">Мобильные приложения</p>
                 <img
                   class="development__img"
-                  src="./images/phone_program.jpg"
+                  src="./images/development/phone_program.jpg"
                   alt="Разработка приложений на телефон"
                   width="370"
                   height="294"
@@ -168,7 +173,7 @@
                 <p class="development__text">Дизайнерские решения</p>
                 <img
                   class="development__img"
-                  src="./images/tablet_program.jpg"
+                  src="./images/development/tablet_program.jpg"
                   alt="Разработка приложений на планшет"
                   width="370"
                   height="294"
@@ -184,13 +189,44 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/igor_demianenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!--набір зображень для десктопних екранів-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/igor_demianenko_lg.jpg    1x,
+                    ./images/team/igor_demianenko_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для планшетів екранів-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/igor_demianenko_md.jpg    1x,
+                    ./images/team/igor_demianenko_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--набір зображень для моб екранів-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/igor_demianenko_sm.jpg    1x,
+                    ./images/team/igor_demianenko_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--дефолтне зображення-->
+                <img
+                  class="team__img"
+                  src="./images/team/igor_demianenko_sm.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__card-name">Игорь Демьяненко</h3>
                 <p class="team__card-career">Product Designer</p>
@@ -261,7 +297,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/olga_repina.jpg"
+                src="./images/team/olga_repina_lg.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
@@ -336,7 +372,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/nikolai_tarasov.jpg"
+                src="./images/team/nikolai_tarasov_lg.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
@@ -411,7 +447,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./images/mihail_ermakov.jpg"
+                src="./images/team/mihail_ermakov_lg.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
