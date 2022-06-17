@@ -1,0 +1,57 @@
+.menu__button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .icon-cross {
+  display: block;
+}
+
+.menu__button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  padding: 48px 40px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-color: #ffffff;
+  padding: 40px, 48px;
+  z-index: 9999;
+  &.is-open {
+    display: block;
+  }
+}
+.mobile__menu-nav,
+.mobile__menu-socials,
+.mobile__menu-contacts {
+  list-style-type: none;
+}
+
+.mobile__menu-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 302px;
+}
+
+.mobile__menu-send {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.mobile__menu-social {
+  display: flex;
+}
