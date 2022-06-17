@@ -11,6 +11,9 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  &:hover {
+    fill: var(--accent-color);
+  }
 
   &.is-open {
     z-index: 99999;
