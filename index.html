@@ -23,46 +23,11 @@
   <body>
     <!--Хедер-->
     <header class="header">
-      <div class="container header__container main__nav">
-        <nav class="header__nav">
-          <a class="header__logo link" href="./index.html"
-            >Web<span class="header__logo header__logo--dark">Studio</span></a
-          >
-          <ul class="header__list list">
-            <li class="header__item">
-              <a class="header__link link header__link--active" href=""
-                >Студия</a
-              >
-            </li>
-            <li class="header__item">
-              <a class="header__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header__contact list">
-          <li class="header__contact-item">
-            <a
-              class="header__contact-mail link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="header__contact-icon" width="16px" height="12px">
-                <use href="./images/svg/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header__contact-item">
-            <a class="header__contact-number link" href="tel:+380961111111">
-              <svg class="header__contact-icon" width="10" height="16">
-                <use href="./images/svg/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+      <div class="container mobile__container">
+        <a class="header__logo link" href="./index.html"
+          >Web<span class="header__logo header__logo--dark">Studio</span></a
+        >
+
         <!--моб меню-->
         <button
           class="menu__button"
@@ -72,8 +37,8 @@
           data-menu-button
         >
           <svg
-            width="24px"
-            height="16px"
+            width="40px"
+            height="40px"
             aria-label="переключатель мобыльного меню"
           >
             <use
@@ -90,7 +55,11 @@
           <!--контент моб меню-->
           <ul class="mobile__menu-nav list">
             <li class="mobile__menu-item">
-              <a href="./index.html" class="mobile__menu-link link">Студия</a>
+              <a
+                href="./index.html"
+                class="mobile__menu-link link mobile__menu-link--active"
+                >Студия</a
+              >
             </li>
             <li class="mobile__menu-item">
               <a href="./portfolio.html" class="mobile__menu-link link"
@@ -156,6 +125,47 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="container header__container main__nav">
+        <nav class="header__nav">
+          <a class="header__logo link" href="./index.html"
+            >Web<span class="header__logo header__logo--dark">Studio</span></a
+          >
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link link header__link--active" href=""
+                >Студия</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__contact list">
+          <li class="header__contact-item">
+            <a
+              class="header__contact-mail link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header__contact-icon" width="16px" height="12px">
+                <use href="./images/svg/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header__contact-item">
+            <a class="header__contact-number link" href="tel:+380961111111">
+              <svg class="header__contact-icon" width="10" height="16">
+                <use href="./images/svg/sprite.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <!--Мейн-->

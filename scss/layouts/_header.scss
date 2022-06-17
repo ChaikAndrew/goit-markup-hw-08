@@ -2,15 +2,22 @@
   position: relative;
   border-bottom: 1px solid var(--border-color);
 
+  &__container {
+    display: none;
+    @include mq(tablet) {
+      display: flex;
+    }
+  }
+
   &__list {
     margin-left: 93px;
     display: flex;
   }
 
   /* main navigation */
-  .main__nav {
-    display: flex;
-  }
+  // .main__nav {
+  //   display: flex;
+  // }
 
   &__nav {
     display: flex;

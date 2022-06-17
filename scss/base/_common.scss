@@ -23,3 +23,8 @@ body {
 
   background-color: var(--main-background);
 }
+
+.scroll-hidden {
+  overflow: hidden;
+  height: 100vh;
+}
