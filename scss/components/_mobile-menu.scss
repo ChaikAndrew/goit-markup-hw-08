@@ -11,7 +11,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  &:hover {
+  &:active {
     fill: var(--accent-color);
   }
 
@@ -44,7 +44,9 @@
   padding: 40px, 48px;
   z-index: 9999;
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 .mobile__menu-nav,
@@ -58,8 +60,6 @@
   font-size: 40px;
   line-height: 1.42;
   letter-spacing: 0.02em;
-
-  margin-bottom: 302px;
 }
 
 .mobile__menu-send {
