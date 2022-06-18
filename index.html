@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
+    <meta name="description" content="Сайт по созданию веб услуг" />
+    <meta property="og:title" content="Веб студия" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Сайт по созданию веб услуг" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -272,6 +279,7 @@
                     alt="Разработка приложений для ПК"
                     width="370"
                     height="294"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -299,6 +307,7 @@
                     alt="Разработка приложений на телефон"
                     width="370"
                     height="294"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -324,6 +333,7 @@
                     alt="Разработка приложений на планшет"
                     width="370"
                     height="294"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -370,8 +380,9 @@
                   class="team__img"
                   src="./images/team/igor_demianenko_sm.jpg"
                   alt="Игорь Демьяненко"
-                  width="450"
-                  height="460"
+                  width="270"
+                  height="260"
+                  loading="lazy"
                 />
               </picture>
 
@@ -478,6 +489,7 @@
                   alt="Ольга Репина"
                   width="270"
                   height="260"
+                  loading="lazy"
                 />
               </picture>
 
@@ -584,6 +596,7 @@
                   alt="Николай Тарасов"
                   width="270"
                   height="260"
+                  loading="lazy"
                 />
               </picture>
 
@@ -690,6 +703,7 @@
                   alt="Михаил Ермаков"
                   width="270"
                   height="260"
+                  loading="lazy"
                 />
               </picture>
 
@@ -964,7 +978,12 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal__btn-close" data-modal-close>
+        <button
+          type="button"
+          class="modal__btn-close"
+          data-modal-close
+          aria-label="кнопка закрытия модального окна"
+        >
           <svg class="modal__icon-close" width="11px" height="11px">
             <use href="./images/svg/sprite.svg#close_modal"></use>
           </svg>
