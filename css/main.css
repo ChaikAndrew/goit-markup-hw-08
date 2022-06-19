@@ -227,8 +227,9 @@ img {
 }
 @media screen and (max-width: 767.98px) {
   .modal {
-    max-width: 450px;
+    max-height: calc(100vh - 30px);
     width: calc(100% - 30px);
+    overflow: auto;
   }
 }
 @media screen and (min-width: 480px) {
@@ -851,7 +852,6 @@ img {
 }
 @media screen and (min-width: 480px) {
   .hero__tite {
-    font-weight: 900;
     font-size: 26px;
     line-height: 1.65;
   }
@@ -1357,10 +1357,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-background);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 380px) {
   .overlay-card__text {
-    padding: 24px;
-    font-size: 14px;
+    padding: 15px;
+    font-size: 15px;
   }
 }
 
