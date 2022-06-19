@@ -8,6 +8,13 @@
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
+  @include mq(not-desktop) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @include mq(tablet-only) {
+    height: auto;
+  }
 
   //фон для мобільної версіі
 

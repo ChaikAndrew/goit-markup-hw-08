@@ -14,10 +14,12 @@
 .portfolio__projects-list {
   @include mq(mobile-only) {
     flex-wrap: wrap;
+
     justify-content: left;
   }
 
   display: flex;
+
   justify-content: center;
 }
 
@@ -43,7 +45,9 @@
 
 .portfolio__link {
   width: 100%;
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms var(--main-anim);
 }
 
@@ -54,6 +58,7 @@
 }
 
 .portfolio__desc {
+  flex-grow: 1;
   padding: 20px 24px;
 
   background-color: var(--main-background);
@@ -101,6 +106,11 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--main-background);
+
+  @media screen and (max-width: 479px) {
+    padding: 24px;
+    font-size: 14px;
+  }
 }
 
 .portfolio__item {
