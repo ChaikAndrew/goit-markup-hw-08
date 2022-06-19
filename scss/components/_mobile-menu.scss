@@ -17,7 +17,7 @@
   fill: var(--accent-color);
 }
 
-&.is-open {
+.menu__button.is-open {
   z-index: 99999;
 }
 

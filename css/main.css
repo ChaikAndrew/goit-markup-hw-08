@@ -489,9 +489,12 @@ img {
   border: none;
   cursor: pointer;
 }
-.menu__button:focus, .menu__button:hover {
+
+.menu__button:focus,
+.menu__button:hover {
   fill: var(--accent-color);
 }
+
 .menu__button.is-open {
   z-index: 99999;
 }
@@ -841,19 +844,20 @@ img {
   margin: 0;
   margin-bottom: 30px;
   color: var(--main-background);
+  font-weight: 900;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 @media screen and (min-width: 480px) {
   .hero__tite {
+    font-weight: 900;
     font-size: 26px;
     line-height: 1.65;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__tite {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
   }
