@@ -24,6 +24,11 @@
   min-height: 521px;
   padding: 40px;
 
+  @media screen and (max-height: 568px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   background-color: var(--main-background);
 
   top: 50%;
@@ -88,7 +93,11 @@
   letter-spacing: 0.03em;
 
   color: var(--text-color);
+  @media screen and (max-height: 568px) {
+    font-size: 15px;
+  }
 }
+
 .modal__field {
   position: relative;
   display: flex;
@@ -187,6 +196,10 @@
 
   margin-top: 20px;
   margin-bottom: 30px;
+  @media screen and (max-height: 568px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .modal__agreement {

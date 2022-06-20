@@ -225,6 +225,12 @@ img {
   transition: transform 250ms var(--main-anim);
   transition: transform 250ms var(--main-anim), -webkit-transform 250ms var(--main-anim);
 }
+@media screen and (max-height: 568px) {
+  .modal {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .modal {
     max-height: calc(100vh - 30px);
@@ -283,6 +289,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+@media screen and (max-height: 568px) {
+  .modal__title {
+    font-size: 15px;
+  }
 }
 
 .modal__field {
@@ -388,6 +399,12 @@ img {
   position: relative;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+@media screen and (max-height: 568px) {
+  .modal__terms-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .modal__agreement {
